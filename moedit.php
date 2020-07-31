@@ -12,7 +12,8 @@ $numberofrows = count(file($flatfile));
 $datastuff = file_get_contents($flatfile);
 
 
-$heightrows = 10000;
+//$heightrows = 10000;
+$heightrows = 30;
 // Height of the rows adjusted for a 40-column textarea (minus the number of lines that only contain newlines) (plus 15 more rows for good measure)
 //$heightrows = ($numberofrows + (intval(strlen($datastuff) / 40)) - ((intval(strlen($datastuff) / 40)) - $numberofrows) + 15);
 
